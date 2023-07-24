@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        int sum=0;
+        Scanner sc=new Scanner(System.in);
+        int input1=sc.nextInt();
+        int length=Integer.toString(input1).length();
+        System.out.println(length);
+        while(length!=1){
+            for(int i=1;i<length+1;i++){
+                sum=sum+input1%10;
+                input1=input1/10;
+                
+            }
+        length = Integer.toString(sum).length();
+        if(length!=1){
+            input1=0+sum;
+            sum=0;
+            
+        }
+        }
+        System.out.println(sum);
+    }
+}
