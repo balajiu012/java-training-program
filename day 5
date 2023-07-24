@@ -1,0 +1,19 @@
+/* to chenck whether a string is palindrome or not*/
+
+public class PalindromeString {
+ 
+    public static void main(String[] args) {
+         
+        String str = "tattarrattat";
+         
+        //reverse the string
+        String rev = (new StringBuilder(str)).reverse().toString();
+         
+        //check if str is palindrome
+        if(str.equals(rev)) {
+            System.out.println(str+" is Palindrome.");
+        } else {
+            System.out.println(str+" is not Palindrome.");
+        }
+    }
+}
